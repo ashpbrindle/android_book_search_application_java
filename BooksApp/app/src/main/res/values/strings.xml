@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Book List</string>
+    <string name="search">Search For Book</string>
+    <string name="format">Change Read Format</string>
+    <string name="results">Results</string>
+</resources>

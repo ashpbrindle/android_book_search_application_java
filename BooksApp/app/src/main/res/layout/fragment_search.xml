@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fragHeader"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/search"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragHeader"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:hint="Please Specify a Title"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+        <EditText
+            android:id="@+id/txtYear"
+            android:layout_below="@+id/txtOr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:hint="Please Specify a Year"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/txtOr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="and/or"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/txtTitle"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtYear"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/search"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</LinearLayout>
